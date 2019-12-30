@@ -7,10 +7,10 @@ export default function App() {
     <View style={styles.container}>
       <Text>oK!</Text>
       <Button
-          title="Press me"
-          color="#f194ff"
-          onPress={() => {Axios.get('http://localhost:8080/get').then(data=>Alert.alert(JSON.stringify(data.data)))}}
-        />
+        title="Press me"
+        color="#f194ff"
+        onPress={() => { Axios.get('http://localhost:8080/get').then(data => Alert.alert(JSON.stringify(data.data))) }}
+      />
     </View>
   );
 }
