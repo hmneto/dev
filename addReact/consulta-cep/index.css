@@ -1,0 +1,11 @@
+* {
+    box-sizing: border-box;
+}
+
+.painel {
+    width: 100%;
+    padding: 35px;
+    text-align: center;
+    margin-top: 130px;
+    background-color: yellow;
+}

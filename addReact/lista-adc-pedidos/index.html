@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Minhas Pizzas Preferidas</title>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <style>
+        @-ms-viewport { width: 100vw ; zoom: 100% ; }  @viewport { width: 100vw ; zoom: 100% ; }
+        @-ms-viewport { user-zoom: fixed ; }           @viewport { user-zoom: fixed ; }
+    </style>
+
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.css" />
+    <script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.js"></script>
+    <script src="js/bd.js"></script>
+</head>
+
+<body>
+    <div data-role="page" id="ListaPizzas">
+        <div data-role="header" data-theme="a">
+            <a href="#IncluirPizzas" data-role="button" class="ui-btn-left homeBtn" data-theme="c" data-icon="plus" data-transition="slideup">Incluir</a>
+            <h1>Lista Pizzas</h1>
+        </div>
+        <div data-role="content">
+            <ul data-role="listview" data-theme="c" id="pizzas">
+                <p id="semErros" style="display:none;">Nenhuma Pizzas Cadastradas!</p>
+            </ul>
+        </div>
+    </div>
+    
+    <div data-role="page" id="IncluirPizzas">
+        
+        <div data-role="header" data-theme="a">
+            <h1>Incluir Pizzas</h1>
+        </div>
+
+        <div data-role="content">
+            
+                <form id="form-pizzas">
+                    <input id="NomePizza" />
+                    <input type="button" value="Incluir" id="IncluirPizzas" data-icon="plus" />
+                </form>
+            
+        </div>
+    </div>
+    
+    
+</body>
+</html>
