@@ -4,7 +4,7 @@ $id =  2;
 error_reporting(0);
 utf8_encode();
 
-$servername = getenv("hostdbh");
+$servername = getenv("hostdb");
 $username = getenv("userdb");
 $password = getenv("passdb");
 $database = getenv("userdb");
