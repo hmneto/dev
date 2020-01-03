@@ -1,0 +1,77 @@
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    
+        <title>LEAFLETJS</title>
+   
+        
+        
+         <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css" />
+         <script src="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script>
+         <style type="text/css" media="all">
+         #map { height: 530px; }
+             
+         </style>
+        
+    </head>
+    <body>
+    <div id="map"></div>
+    
+    
+    
+    
+    
+    
+    
+        <script type="text/javascript" charset="utf-8">
+            var map = L.map('map').setView([51.505, -0.09], 13);
+            
+            
+            
+            L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
+            attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
+            maxZoom: 18,
+            id: 'hmneton.o7d5cnna',
+            accessToken: 'pk.eyJ1IjoiaG1uZXRvbiIsImEiOiJjaWYybzllOXAxcXplczZtM284bjhxNm13In0.tW4Frm9j3Gztl7cokibItg'
+            }).addTo(map);
+            
+            var marker = L.marker([51.5, -0.19]).addTo(map);
+            marker.bindPopup("<a href='http://leafletjs.com/' target='_blank'>Cique Aqui</a>").openPopup();
+        </script>
+        
+        
+        <script type="text/javascript" charset="utf-8">
+            var marker = L.marker([51.5, -0.09]).addTo(map);
+            marker.bindPopup("<b>tenso!</b><br>Tentando entender como fazer a para . ").openPopup();
+            
+            
+            
+            
+            var map = L.map('map', {measureControl:true});
+            
+            
+            L.Control.measureControl().addTo(map);
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+        </script>
+    
+    
+    
+    
+    
+    
+        
+        
+        
+        
+        
+    </body>
+</html>
