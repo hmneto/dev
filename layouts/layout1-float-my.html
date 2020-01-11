@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Layout Grid</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        html {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        
+        .header {
+            font-size: 35px;
+            padding: 15px;
+            text-align: center;
+        }
+        
+        .row::after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+        
+        .coluna {
+            padding: 15px;
+            float: left;
+            height: 400px;
+            width: 33.33%;
+        }
+        
+        .footer {
+            text-align: center;
+            padding: 10px;
+        }
+        
+        @media (max-width:800px) {
+            .coluna {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Layout Float</h2>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit libero illum itaque aperiam maiores non aliquam fugiat obcaecati eveniet nostrum.</p>
+
+    <div class="header">
+        <h2>Logo</h2>
+    </div>
+
+    <div class="row">
+        <div class="coluna" style="background-color: #d1d1d1">Primeira</div>
+        <div class="coluna" style="background-color: #c9c9c9">Segunda</div>
+        <div class="coluna" style="background-color: #b9b9b9">Terceira</div>
+    </div>
+
+    <div class="footer">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum iste nobis quae vel ullam quisquam?</p>
+    </div>
+</body>
+
+</html>

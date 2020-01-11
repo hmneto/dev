@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Layout grid by my OWN</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        html {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        
+        .grid-container {
+            display: grid;
+            grid-template-areas: 'header header header header header header' 'left left middle middle right right' 'footer footer footer footer footer footer';
+        }
+        
+        .header {
+            grid-area: header;
+            padding: 25px;
+            text-align: center;
+            font-size: 35px;
+        }
+        
+        .left,
+        .middle,
+        .right {
+            padding: 20px;
+            height: 400px;
+        }
+        
+        .left {
+            grid-area: left;
+        }
+        
+        .middle {
+            grid-area: middle;
+        }
+        
+        .right {
+            grid-area: right;
+        }
+        
+        .footer {
+            grid-area: footer;
+        }
+        
+        @media (max-width:600px) {
+            .grid-container {
+                display: grid;
+                grid-template-areas: 'header header header header header header' 'right right right right right right' 'middle middle middle middle middle middle' 'left left left left left left' 'footer footer footer footer footer footer';
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Layout grid my</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita beatae, deserunt nihil officia consequuntur reprehenderit!</p>
+    <div class="grid-container">
+        <div class="header">
+            <h2>Logo</h2>
+        </div>
+        <div class="left" style="background-color: #aaa;">Primeiro</div>
+        <div class="middle" style="background-color: #bbb;">Segundo</div>
+        <div class="right" style="background-color: #ccc;">Terceiro</div>
+
+        <div class="footer">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab blanditiis possimus molestiae dolorum quaerat odio!</p>
+        </div>
+    </div>
+</body>
+
+</html>

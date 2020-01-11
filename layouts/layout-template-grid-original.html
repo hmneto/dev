@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Template grid</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        html {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        
+        .header {
+            grid-area: header;
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+        }
+        
+        .grid-container {
+            display: grid;
+            grid-template-areas: 'header header header header header header' 'left left middle middle right right' 'footer footer footer footer footer footer';
+        }
+        
+        .left,
+        .middle,
+        .right {
+            padding: 10px;
+            height: 300px;
+        }
+        
+        .left {
+            grid-area: left;
+        }
+        
+        .middle {
+            grid-area: middle;
+        }
+        
+        .right {
+            grid-area: right;
+        }
+        
+        .footer {
+            grid-area: footer;
+            padding: 10px;
+            text-align: center;
+        }
+        
+        @media (max-width:600px) {
+            .grid-container {
+                grid-template-areas: 'header header header header header header' 'left left left left left left' 'middle middle middle middle middle middle' 'right right right right right right' 'footer footer footer footer footer footer';
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Template layout grid</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam dicta voluptatibus nemo provident sequi quo accusantium, quas eaque enim temporibus?</p>
+    <div class="grid-container">
+
+        <div class="header">
+            <h2>Logo</h2>
+        </div>
+
+        <div class="left" style="background-color:#aaa;">Primeira</div>
+        <div class="middle" style="background-color:#bbb;">Segunda</div>
+        <div class="right" style="background-color:#ccc;">Terceira</div>
+
+        <div class="footer">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla ratione voluptatem et aliquam, nisi perferendis.</p>
+        </div>
+    </div>
+</body>
+
+</html>

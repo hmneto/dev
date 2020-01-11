@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Media Query Flex Layout</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        html {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        
+        .header {
+            padding: 15px;
+            font-size: 35px;
+            text-align: center;
+        }
+        
+        .row {
+            display: flex;
+        }
+        
+        .coluna {
+            flex: 1;
+            height: 400px;
+            padding: 25px;
+        }
+        
+        .footer {
+            font-size: 15px;
+            text-align: center;
+            padding: 30px;
+        }
+        
+        @media (max-width:800px) {
+            .row {
+                flex-direction: column;
+                height: 800px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Layout Flex My</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis similique maxime id! Repellendus possimus laudantium ipsam vel velit!</p>
+    <div class="header">
+        <h2>Logo</h2>
+    </div>
+    <div class="row">
+        <div class="coluna" style="background-color: #232323;">Primeira</div>
+        <div class="coluna" style="background-color: #f3f3f3;">Segunda</div>
+        <div class="coluna" style="background-color: #cecece;">Terceira</div>
+    </div>
+
+    <div class="footer">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime dolores quae aliquid excepturi iste libero.</p>
+    </div>
+</body>
+
+</html>

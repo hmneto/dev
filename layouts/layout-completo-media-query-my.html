@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Media query</title>
+    <style>
+        /* For desktop: */
+        
+        * {
+            box-sizing: border-box;
+        }
+        
+        .menu ul {
+            list-style-type: none;
+            margin: 0px;
+            padding: 0px;
+        }
+        
+        .menu li {
+            padding: 8px;
+            margin-bottom: 7px;
+            background-color: #ffcc33;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+        }
+        
+        .row::after {
+            content: '';
+            clear: both;
+            display: block;
+        }
+        
+        .header {
+            background-color: #ffcc33;
+            padding: 15px;
+            color: white;
+        }
+        
+        html {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        
+        .col-1 {
+            width: 8.33%;
+        }
+        
+        .col-2 {
+            width: 16.66%;
+        }
+        
+        .col-3 {
+            width: 25%;
+        }
+        
+        .col-4 {
+            width: 33.33%;
+        }
+        
+        .col-5 {
+            width: 41.66%;
+        }
+        
+        .col-6 {
+            width: 50%;
+        }
+        
+        .col-7 {
+            width: 58.33%;
+        }
+        
+        .col-8 {
+            width: 66.66%;
+        }
+        
+        .col-9 {
+            width: 75%;
+        }
+        
+        .col-10 {
+            width: 83.33%;
+        }
+        
+        .col-11 {
+            width: 91.66%;
+        }
+        
+        .col-12 {
+            width: 100%;
+        }
+        
+        [class*="col-"] {
+            float: left;
+            padding: 15px;
+        }
+        
+        .footer {
+            background-color: #ffcc33;
+            color: #ffffff;
+            padding: 15px;
+            text-align: center;
+            font-size: 12px;
+        }
+        
+        li:hover {
+            background-color: #ffccff;
+        }
+        
+        .aside {
+            background-color: #ffcc33;
+            padding: 15px;
+            color: #ffffff;
+            text-align: center;
+            font-size: 14px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+        }
+        
+        @media only screen and (max-width:768px) {
+            [class*="col-"] {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <h1>Logo</h1>
+    </div>
+
+    <div class="row">
+        <div class="col-3 menu">
+            <ul>
+                <li>Lorem, ipsum.</li>
+                <li>Vero, cum!</li>
+                <li>Est, ea.</li>
+                <li>Quasi, maiores.</li>
+            </ul>
+        </div>
+
+        <div class="col-6">
+            <h1>Lorem, ipsum.</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci tempora veritatis, ab similique a culpa.</p>
+        </div>
+
+        <div class="col-3">
+            <div class="aside">
+                <h2>Lorem.</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, eveniet?</p>
+                <h2>Lorem, ipsum.</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime odio culpa tenetur quis? Ducimus, doloremque.</p>
+                <h2>Lorem, ipsum.</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit nostrum distinctio, itaque aliquam autem quasi.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis esse laborum fugit itaque optio quas.</p>
+    </div>
+</body>
+
+</html>

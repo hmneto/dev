@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>flex Layout</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        html {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        
+        .header {
+            text-align: left;
+            padding: 15px;
+            font-size: 30px;
+        }
+        
+        .footer {
+            padding: 15px;
+            text-align: center;
+        }
+        
+        .coluna {
+            height: 400px;
+            flex: 1;
+        }
+        
+        .row {
+            display: flex;
+        }
+        
+        @media (max-width:600px) {
+            .row {
+                flex-direction: column;
+                height: 800px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Flex Layout</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim veniam facilis eius blanditiis commodi excepturi.</p>
+    <div class="header">
+        <h2>Logo</h2>
+    </div>
+
+    <div class="row">
+        <div class="coluna" style="background-color: #e2e2e2;">Primeira</div>
+        <div class="coluna" style="background-color: #e5e5e5;">Segunda</div>
+        <div class="coluna" style="background-color: #efefef;">Terceira</div>
+    </div>
+
+    <div class="footer">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias nostrum cupiditate quidem ratione, earum culpa.</p>
+    </div>
+</body>
+
+</html>

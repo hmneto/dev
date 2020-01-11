@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Layout-1</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        html {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        
+        .colunm {
+            padding: 15px;
+            float: left;
+            width: 33.33%;
+            height: 400px;
+        }
+        
+        .header {
+            padding: 30px;
+            font-size: 35px;
+            text-align: center;
+        }
+        
+        .row::after {
+            content: '';
+            display: table;
+            clear: both;
+        }
+        
+        .footer {
+            padding: 15px;
+            text-align: center;
+        }
+        
+        @media only screen and (max-width:600px) {
+            .colunm {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Layout float layout</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione earum laboriosam ad? Sunt quam harum iste distinctio unde saepe iusto deserunt! Dolore voluptatibus commodi quasi labore error, quis id tenetur?</p>
+    <div class="header">
+        <h2>Header</h2>
+    </div>
+
+    <div class="row">
+        <div class="colunm" style="background-color: #aaa;">First Value</div>
+        <div class="colunm" style="background-color: #bbb;">Second Value</div>
+        <div class="colunm" style="background-color: #ccc;">Thrirth Value</div>
+    </div>
+
+    <div class="footer">
+        <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+</body>
+
+</html>
