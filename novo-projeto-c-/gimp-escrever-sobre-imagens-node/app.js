@@ -1,7 +1,7 @@
 var Jimp = require("jimp");
 
 var fileName = 'test.png';
-var imageCaption = 'primeira imagem';
+var imageCaption = 'segj';
 var loadedImage;
 
 Jimp.read(fileName)
@@ -10,7 +10,7 @@ Jimp.read(fileName)
         return Jimp.loadFont(Jimp.FONT_SANS_16_BLACK);
     })
     .then(function (font) {
-        loadedImage.print(font, 10, 10, imageCaption)
+        loadedImage.print(font, 30, 30, imageCaption)
                    .write(fileName);
     })
     .catch(function (err) {

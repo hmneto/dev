@@ -27,4 +27,4 @@ const changeStr = JSON.stringify(changes)
 const rChanges = JSON.parse(changeStr)
 objn = automerge.applyChanges(obj, rChanges)
 
-console.log(objn)
+// console.log(objn)
