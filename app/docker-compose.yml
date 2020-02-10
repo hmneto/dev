@@ -1,12 +1,20 @@
 version: '3'
 services: 
-    web:
-        image: nginx
-        container_name: web
+    # web:
+    #     image: nginx
+    #     container_name: web
+    #     ports: 
+    #         - 80:80
+    #     volumes: 
+    #         - ./web/:/usr/share/nginx/html/
+
+    dev:
+        build:
+            context: ./web
+            dockerfile: Dockerfile
+
         ports: 
-            - 80:80
-        volumes: 
-            - ./web/:/usr/share/nginx/html/
+            - 80:3000
     
     node:
         build:
