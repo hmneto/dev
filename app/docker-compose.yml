@@ -7,3 +7,11 @@ services:
             - 80:80
         volumes: 
             - ./web/:/usr/share/nginx/html/
+    
+    node:
+        build:
+            context: ./node
+            dockerfile: Dockerfile
+
+        ports: 
+            - 81:3000
