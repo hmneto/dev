@@ -14,4 +14,4 @@ services:
             dockerfile: Dockerfile
 
         ports: 
-            - 81:8000
+            - 81:8080
