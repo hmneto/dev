@@ -8,10 +8,10 @@ class Cadastro extends Component {
   };
 
   mySubmitHandler = event => {
-    alert("You are submitting " + this.state.username);
+    // alert("You are submitting " + this.state.username);
     event.preventDefault();
-    axios.post("http://localhost:8080/add", this.state);
-    this.setState({ username: "" });
+    axios.post("http://192.168.99.100:81/add", this.state);
+    this.setState({ username: ' ' });
   };
 
   render() {
@@ -21,7 +21,7 @@ class Cadastro extends Component {
         <p>Enter your name:</p>
         <input
           type="text"
-          name="valor"
+          // name="valor"
           value={this.state.username}
           onChange={this.myChangeHandler}
         />

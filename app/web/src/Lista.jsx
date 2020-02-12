@@ -6,14 +6,14 @@ class Lista extends Component {
   };
   componentDidMount() {
     axios
-      .get("http://localhost:8080/get")
+      .get('http://192.168.99.100:81/get/')
       .then(data => this.setState({ dados: data.data }));
   }
   render() {
     return (
       <div>
         {this.state.dados.map(cada => (
-          <h1>{cada.nome}</h1>
+          <h1 key={cada.id}>{cada.nome}</h1>
         ))}
       </div>
     );

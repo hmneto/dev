@@ -8,13 +8,15 @@ class App extends Component {
     retorno: ''
   }
   componentDidMount() {
-    axios.get('http://localhost:8080/').then(dados => this.setState({ retorno: dados.data }))
+
+    axios.get('http://192.168.99.100:81/get/').then(dados => this.setState({ retorno: dados.data }))
+    axios.get('http://192.168.99.100:81/get/').then(dados => console.log(dados.data))
   }
   render() {
 
     return (
       <div>
-        {this.state.retorno}
+        {/* {this.state.retorno} */}
         <Link to="/add">ADD</Link><br />
         <Link to="/list">LIST</Link>
       </div>
