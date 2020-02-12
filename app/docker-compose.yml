@@ -13,6 +13,8 @@ services:
             context: ./web
             dockerfile: Dockerfile
 
+        volumes: 
+            - ./web/src/:/app
         ports: 
             - 80:3000
     
