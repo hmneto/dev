@@ -1,27 +1,36 @@
 version: '3'
 services: 
-    # web:
-    #     image: nginx
-    #     container_name: web
-    #     ports: 
-    #         - 80:80
-    #     volumes: 
-    #         - ./web/:/usr/share/nginx/html/
-
-    dev:
-        build:
-            context: ./web
-            dockerfile: Dockerfile
-
+    web:
+        image: nginx
+        container_name: web
+        ports: 
+            - 80:80
         volumes: 
-            - ./web/src/:/app
-        ports: 
-            - 80:3000
-    
-    node:
-        build:
-            context: ./node
-            dockerfile: Dockerfile
+            - ./web/build/:/usr/share/nginx/html/
 
-        ports: 
-            - 81:8080
+    node:
+      build:
+          context: ./node
+          dockerfile: Dockerfile
+      ports: 
+          - 81:8080
+
+    # dev:
+    #     build:
+    #         context: ./web
+    #         dockerfile: Dockerfile
+    #     volumes: 
+    #         - ./web/src/:/app/src/
+    #     ports: 
+    #         - 80:3000
+    
+
+    # version: "2.1"
+    # services:
+    #   react-service:
+    #     container_name: react-service
+    #     build: ./web
+    #     ports:
+    #       - '3337:3000' # expose ports - HOST:CONTAINER
+    #     environment:
+    #       - NODE_ENV=development
