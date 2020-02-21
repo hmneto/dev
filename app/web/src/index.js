@@ -6,7 +6,7 @@ import Lista from './Lista'
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
 
 ReactDOM.render(<BrowserRouter
-// basename="/build/"
+basename="/build/"
 >
   <Switch>
     <Route path="/" exact component={App} />
