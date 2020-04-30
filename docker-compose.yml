@@ -20,3 +20,9 @@ services:
       - 82:80
     volumes: 
       - ./classe-singleton-storage-funcao-eval:/usr/local/apache2/htdocs
+
+  readerChunks:
+    image: node
+    command: node teste
+    volumes: 
+      - ./stream-dev-pleno-exemplos:/usr/local/apache2/htdocs

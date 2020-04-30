@@ -1,5 +1,5 @@
 const fs = require('fs')
-const readable = fs.createReadStream(`${__dirname}\\filme.mp4`)
+const readable = fs.createReadStream(`${__dirname}\\teste.js`)
 let count = 0
 //readable.on('data', function(data){
 //    console.log(count++, data)
