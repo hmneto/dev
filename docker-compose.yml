@@ -6,3 +6,10 @@ services:
       - 80:80
     volumes: 
       - ./threejs-demos-master((repositorio_copiado)):/usr/local/apache2/htdocs
+
+  treejs2:
+    image: httpd
+    ports: 
+      - 81:80
+    volumes: 
+      - ./three-js-master:/usr/local/apache2/htdocs
