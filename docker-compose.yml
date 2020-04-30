@@ -27,3 +27,12 @@ services:
     command: node /app/teste.js && node /app/readable.js
     volumes: 
       - ./stream-dev-pleno-exemplos:/app
+
+  sockerio:
+    build: ./socket-io-Three-js-master
+    command: node /app/bin/www
+    # volumes: 
+    # - ./socket-io-Three-js-master:/app
+    # - /app/node_modules
+    ports: 
+      - 83:3000
