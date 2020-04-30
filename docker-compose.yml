@@ -23,6 +23,7 @@ services:
 
   readerChunks:
     container_name: readerChunks
-    image: ubuntu
+    image: node
+    command: node /app/teste.js && node /app/readable.js
     volumes: 
       - ./stream-dev-pleno-exemplos:/app
