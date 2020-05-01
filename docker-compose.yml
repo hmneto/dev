@@ -40,3 +40,13 @@ services:
       - ./php:/var/www/html
     ports: 
       - 84:80
+
+  dbforcontroleestoque:
+    build: ./php/login-php/db
+    command: --default-authentication-plugin=mysql_native_password
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: bahm
+      MYSQL_USER: devuser
+      MYSQL_PASSWORD: devpass
