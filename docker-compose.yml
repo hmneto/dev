@@ -31,8 +31,5 @@ services:
   sockerio:
     build: ./socket-io-Three-js-master
     command: node /app/bin/www
-    # volumes: 
-    # - ./socket-io-Three-js-master:/app
-    # - /app/node_modules
     ports: 
       - 83:3000
