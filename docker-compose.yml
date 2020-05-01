@@ -33,3 +33,10 @@ services:
     command: node /app/bin/www
     ports: 
       - 83:3000
+
+  php:
+    image: php:7.3.3-apache
+    volumes: 
+      - ./php:/var/www/html
+    ports: 
+      - 84:80
