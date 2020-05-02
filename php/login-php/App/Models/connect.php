@@ -2,10 +2,10 @@
 
 class Connect
 {
-    var $localhost = "den1.mysql1.gear.host";
-    var $root = "teste33";
-    var $password = "TESTE123@";
-    var $database = "teste33";
+    var $localhost = "dbforcontroleestoque";
+    var $root = "devuser";
+    var $password = "devpass";
+    var $database = "bahm";
     var $SQL;
 
 

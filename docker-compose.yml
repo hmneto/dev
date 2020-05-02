@@ -42,11 +42,21 @@ services:
       - 84:80
 
   dbforcontroleestoque:
-    build: ./php/login-php/db
+    image: mysql:8.0
     command: --default-authentication-plugin=mysql_native_password
     restart: always
+    volumes: 
+      - ./php/login-php/db:/docker-entrypoint-initdb.d
     environment:
       MYSQL_ROOT_PASSWORD: root
-      MYSQL_DATABASE: bahm
+      MYSQL_DATABASE: controlestoque
       MYSQL_USER: devuser
       MYSQL_PASSWORD: devpass
+
+  adminer:
+    image: adminer
+    depends_on:
+      - dbforcontroleestoque
+    restart: always
+    ports:
+      - 85:8080
