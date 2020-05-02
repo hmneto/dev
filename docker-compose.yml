@@ -60,3 +60,8 @@ services:
     restart: always
     ports:
       - 85:8080
+
+  escreversobreimagem:
+    build: ./novo-projeto-c-/gimp-escrever-sobre-imagens-node
+    volumes: 
+      - ./novo-projeto-c-/gimp-escrever-sobre-imagens-node:/app
