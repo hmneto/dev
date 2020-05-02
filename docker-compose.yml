@@ -1,67 +1,67 @@
 version: '3'
 services: 
-  treejs:
-    image: httpd
-    ports: 
-      - 80:80
-    volumes: 
-      - ./threejs-demos-master((repositorio_copiado)):/usr/local/apache2/htdocs
+  # treejs:
+  #   image: httpd
+  #   ports: 
+  #     - 80:80
+  #   volumes: 
+  #     - ./threejs-demos-master((repositorio_copiado)):/usr/local/apache2/htdocs
 
-  treejs2:
-    image: httpd
-    ports: 
-      - 81:80
-    volumes: 
-      - ./three-js-master:/usr/local/apache2/htdocs
+  # treejs2:
+  #   image: httpd
+  #   ports: 
+  #     - 81:80
+  #   volumes: 
+  #     - ./three-js-master:/usr/local/apache2/htdocs
 
-  singleton:
-    image: httpd
-    ports: 
-      - 82:80
-    volumes: 
-      - ./classe-singleton-storage-funcao-eval:/usr/local/apache2/htdocs
+  # singleton:
+  #   image: httpd
+  #   ports: 
+  #     - 82:80
+  #   volumes: 
+  #     - ./classe-singleton-storage-funcao-eval:/usr/local/apache2/htdocs
 
-  readerChunks:
-    container_name: readerChunks
-    image: node
-    command: node /app/teste.js && node /app/readable.js
-    volumes: 
-      - ./stream-dev-pleno-exemplos:/app
+  # readerChunks:
+  #   container_name: readerChunks
+  #   image: node
+  #   command: node /app/teste.js && node /app/readable.js
+  #   volumes: 
+  #     - ./stream-dev-pleno-exemplos:/app
 
-  sockerio:
-    build: ./socket-io-Three-js-master
-    command: node /app/bin/www
-    ports: 
-      - 83:3000
+  # sockerio:
+  #   build: ./socket-io-Three-js-master
+  #   command: node /app/bin/www
+  #   ports: 
+  #     - 83:3000
 
-  php:
-    build: ./php
-    volumes: 
-      - ./php:/var/www/html
-    ports: 
-      - 84:80
+  # php:
+  #   build: ./php
+  #   volumes: 
+  #     - ./php:/var/www/html
+  #   ports: 
+  #     - 84:80
 
-  dbforcontroleestoque:
-    image: mysql:8.0
-    command: --default-authentication-plugin=mysql_native_password
-    restart: always
-    volumes: 
-      - ./php/login-php/db:/docker-entrypoint-initdb.d
-    environment:
-      MYSQL_ROOT_PASSWORD: root
-      MYSQL_DATABASE: controlestoque
-      MYSQL_USER: devuser
-      MYSQL_PASSWORD: devpass
+  # dbforcontroleestoque:
+  #   image: mysql:8.0
+  #   command: --default-authentication-plugin=mysql_native_password
+  #   restart: always
+  #   volumes: 
+  #     - ./php/login-php/db:/docker-entrypoint-initdb.d
+  #   environment:
+  #     MYSQL_ROOT_PASSWORD: root
+  #     MYSQL_DATABASE: controlestoque
+  #     MYSQL_USER: devuser
+  #     MYSQL_PASSWORD: devpass
 
-  adminer:
-    image: adminer
-    depends_on:
-      - dbforcontroleestoque
-    restart: always
-    ports:
-      - 85:8080
+  # adminer:
+  #   image: adminer
+  #   depends_on:
+  #     - dbforcontroleestoque
+  #   restart: always
+  #   ports:
+  #     - 85:8080
 
-  escreversobreimagem:
-    build: ./novo-projeto-c-/gimp-escrever-sobre-imagens-node
-    volumes: 
-      - ./novo-projeto-c-/gimp-escrever-sobre-imagens-node:/app
+  # escreversobreimagem:
+  #   build: ./novo-projeto-c-/gimp-escrever-sobre-imagens-node
+  #   volumes: 
+  #     - ./novo-projeto-c-/gimp-escrever-sobre-imagens-node:/app
