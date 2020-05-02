@@ -6,10 +6,6 @@ $username = $_POST['username'];
 $password = md5($_POST['password']);
 
 
-
-
-
-
 if($username == NULL || $password == NULL){
     echo '<script>alert("Você deve digitar seu nome e senha")</script>';
 }

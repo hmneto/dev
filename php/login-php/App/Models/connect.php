@@ -5,7 +5,7 @@ class Connect
     var $localhost = "dbforcontroleestoque";
     var $root = "devuser";
     var $password = "devpass";
-    var $database = "bahm";
+    var $database = "controlestoque";
     var $SQL;
 
 
