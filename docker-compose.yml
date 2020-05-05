@@ -72,3 +72,10 @@ services:
       - ./layouts:/usr/local/apache2/htdocs
     ports: 
       - 86:80
+
+  classesingleton:
+    image: httpd
+    volumes: 
+      - ./classe-singleton-storage-funcao-eval:/usr/local/apache2/htdocs
+    ports: 
+      - 87:80
