@@ -73,10 +73,17 @@ services:
     ports: 
       - 86:80
 
-  classesingleton:
-    container_name: singleton
+  singleton2:
+    container_name: singleton2
     image: httpd
     volumes: 
-      - ./testttttt:/usr/local/apache2/htdocs
+      - ./singleton2:/usr/local/apache2/htdocs
     ports: 
-      - 87:80
+      - 88:80
+
+  apppizza:
+    image: httpd
+    volumes: 
+      - ./app-pizza:/usr/local/apache2/htdocs
+    ports: 
+      - 89:80
