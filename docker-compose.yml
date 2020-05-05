@@ -74,8 +74,9 @@ services:
       - 86:80
 
   classesingleton:
+    container_name: singleton
     image: httpd
     volumes: 
-      - ./classe-singleton-storage-funcao-eval:/usr/local/apache2/htdocs
+      - ./testttttt:/usr/local/apache2/htdocs
     ports: 
-      - 87:80
+      - 8080:80
