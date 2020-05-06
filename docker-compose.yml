@@ -88,3 +88,6 @@ services:
     ports: 
       - 89:80
       
+
+  sqlserver:
+  image: mcr.microsoft.com/mssql/server:2019-CTP3.1-ubuntu
