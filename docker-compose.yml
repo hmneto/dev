@@ -2,6 +2,7 @@ version: '3'
 services: 
   treejs:
     image: httpd
+    container_name: treejs
     ports: 
       - 80:80
     volumes: 
@@ -9,6 +10,7 @@ services:
 
   treejs2:
     image: httpd
+    container_name: treejs2
     ports: 
       - 81:80
     volumes: 
@@ -16,26 +18,29 @@ services:
 
   singleton:
     image: httpd
+    container_name: singleton
     ports: 
       - 82:80
     volumes: 
       - ./classe-singleton-storage-funcao-eval:/usr/local/apache2/htdocs
 
   readerChunks:
-    container_name: readerChunks
     image: node
+    container_name: readerChunks
     command: node /app/teste.js && node /app/readable.js
     volumes: 
       - ./stream-dev-pleno-exemplos:/app
 
   sockerio:
     build: ./socket-io-Three-js-master
+    container_name: sockerio
     command: node /app/bin/www
     ports: 
       - 83:3000
 
   php:
     build: ./php
+    container_name: php
     volumes: 
       - ./php:/var/www/html
     ports: 
@@ -43,6 +48,7 @@ services:
 
   dbforcontroleestoque:
     image: mysql:8.0
+    container_name: dbforcontroleestoque
     command: --default-authentication-plugin=mysql_native_password
     restart: always
     volumes: 
@@ -55,6 +61,7 @@ services:
 
   adminer:
     image: adminer
+    container_name: adminer
     depends_on:
       - dbforcontroleestoque
     restart: always
@@ -68,6 +75,7 @@ services:
 
   layouts:
     image: httpd
+    container_name: layouts
     volumes: 
       - ./layouts:/usr/local/apache2/htdocs
     ports: 
@@ -83,10 +91,12 @@ services:
 
   apppizza:
     image: httpd
+    container_name: apppizza
     volumes: 
       - ./app-pizza:/usr/local/apache2/htdocs
     ports: 
       - 89:80
-      
+
   sqlserver:
     image: mcr.microsoft.com/mssql/server:2019-CTP3.1-ubuntu
+    container_name: sqlserver
