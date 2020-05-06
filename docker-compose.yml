@@ -68,10 +68,10 @@ services:
     ports:
       - 85:8080
 
-  # escreversobreimagem:
-  #   build: ./novo-projeto-c-/gimp-escrever-sobre-imagens-node
-  #   volumes: 
-  #     - ./novo-projeto-c-/gimp-escrever-sobre-imagens-node:/app
+  escreversobreimagem:
+    build: ./zzzznovo-projeto-c-/gimp-escrever-sobre-imagens-node
+    volumes: 
+      - ./novo-projeto-c-/gimp-escrever-sobre-imagens-node:/app
 
   layouts:
     image: httpd
