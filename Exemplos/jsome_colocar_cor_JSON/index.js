@@ -1,6 +1,6 @@
 const jsome = require('jsome')
 jsome.level.show = true
-jsome.level.char = '>'
+jsome.level.char = '>>'
 jsome.level.color = 'white'
 
 jsome({

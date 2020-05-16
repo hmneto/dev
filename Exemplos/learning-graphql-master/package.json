@@ -9,7 +9,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "json:server":"json-server --watch data.json",
+    "json:server": "json-server --watch data.json",
     "dev:server": "nodemon server.js"
   },
   "author": "",
