@@ -24,39 +24,3 @@ function monta(ponteiro) {
 
 
 //console.log(monta(envia),envia)
-
-let email = 'remedio'
-
-
-let teste = []
-
-teste[email] = {
-    senha: 'vemk',
-    foto: 'boneco.jpeg',
-    bio: 'eu sou o moda foca',
-    verificarAcesso: (function(senha){
-        if(senha==this.senha){
-            return true
-        }
-        return false
-        
-    }),
-    array: []
- 
-}
-let treze = 'xreze'
-
-teste[email].array[email] = 'pega essa'
-teste[treze] = {
-    senha: 'vemk',
-    foto: 'boneco.jpeg',
-    bio: 'eu sou o moda foca',
-}
-
-console.log(teste[email].array[email])
-
-console.log(teste)
-
-
-
-//console.log(teste, teste[email].verificarAcesso('vemk'))
