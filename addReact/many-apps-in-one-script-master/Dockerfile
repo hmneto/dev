@@ -18,8 +18,6 @@ RUN node -v
 
 RUN npm -v
 
-WORKDIR /app
-
 COPY package*.json ./
 
 RUN npm install
