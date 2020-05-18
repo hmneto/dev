@@ -15,3 +15,5 @@ RUN curl -L https://www.npmjs.com/install.sh | sh
 WORKDIR /app
 
 COPY . .
+
+EXPOSE 80
