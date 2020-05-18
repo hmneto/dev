@@ -17,29 +17,17 @@ const App = ()=>{
   }
   return{
     get,
-    use,
-    
+    use, 
   }
 }
-
 a = App()
-
-
-
 a.use(function(next){
   setTimeout(function(){
     console.log('first one')
-    console.log(next)
-    
   },10000)
-  
   next()
 })
 a.use(function(next){
   console.log('second one')
-  
 })
-
-//a.runMiddleWares()
-
 a.get()
