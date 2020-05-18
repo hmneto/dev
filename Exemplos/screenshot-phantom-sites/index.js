@@ -7,12 +7,12 @@ const takeSnapshot = async(url)=>{
     const status = await page.open(url)
     console.log(status)
     
-    //const content = await page.property('content')
-    //console.log(content)
+    const content = await page.property('content')
+    console.log(content)
 
-    await page.render('google.png')
+    await page.render('uol.png')
 
     await instance.exit()
 }
 
-takeSnapshot('http://google.com')
+takeSnapshot('https://www.uol.com.br/')
