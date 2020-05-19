@@ -7,3 +7,19 @@ services:
       - "80:3000"
     volumes:
       - .:/usr/app
+
+
+  dbforcontroleestoque:
+    image: mysql:8.0
+    container_name: dbforcontroleestoque
+    command: --default-authentication-plugin=mysql_native_password
+    restart: always
+    volumes: 
+      - ./db:/docker-entrypoint-initdb.d
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: controlestoque
+      MYSQL_USER: devuser
+      MYSQL_PASSWORD: devpass
+    ports: 
+      - 3306:3306

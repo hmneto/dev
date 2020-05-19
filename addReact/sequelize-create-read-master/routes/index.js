@@ -5,7 +5,7 @@ var router = express.Router();
 const Sequelize = require('sequelize')
 
 var sequelize = new Sequelize('controlestoque', 'devuser', 'devpass',{
-  host: '192.168.99.100',
+  host: 'dbforcontroleestoque',
   dialect: 'mysql',
 
   pool:{
