@@ -4,8 +4,8 @@ var router = express.Router();
 
 const Sequelize = require('sequelize')
 
-var sequelize = new Sequelize('teste', 'devuser', 'devpass',{
-  host: 'http://192.168.99.100',
+var sequelize = new Sequelize('controlestoque', 'devuser', 'devpass',{
+  host: '192.168.99.100',
   dialect: 'mysql',
 
   pool:{
@@ -23,17 +23,24 @@ var video = sequelize.define('video', {
   numero: Sequelize.INTEGER
 })
 
-video.create({titulo: 'novo registro', descricao: 'sim', numero: 2}).then(function(task){
-  task.save()
-})
 
 sequelize.sync()
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
   video.findAll().then(function(objs){
-    //console.log(objs)
+    console.log(objs)
     res.render('index', { title: 'Express', lista: objs });
+  })
+  
+});
+
+router.get('/add', function(req, res, next) {
+  video.findAll().then(function(objs){
+    video.create({titulo: 'velho registro', descricao: 'sim', numero: 2}).then(function(task){
+      task.save()
+    })
+    res.send('ok')    
   })
   
 });
