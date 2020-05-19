@@ -4,8 +4,8 @@ var router = express.Router();
 
 const Sequelize = require('sequelize')
 
-var sequelize = new Sequelize('testee', 'root', '',{
-  host: 'localhost',
+var sequelize = new Sequelize('teste', 'devuser', 'devpass',{
+  host: 'http://192.168.99.100',
   dialect: 'mysql',
 
   pool:{
