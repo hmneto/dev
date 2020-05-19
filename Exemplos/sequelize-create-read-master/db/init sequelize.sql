@@ -14,13 +14,13 @@
 -- Copiando estrutura para tabela controlestoque.videos
 CREATE TABLE IF NOT EXISTS `videos` (
   `id` int NOT NULL AUTO_INCREMENT,
-  `titulo` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `descricao` text COLLATE utf8_unicode_ci,
+  `titulo` varchar(255) DEFAULT NULL,
+  `descricao` text,
   `numero` int DEFAULT NULL,
   `createdAt` datetime NOT NULL,
   `updatedAt` datetime NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 -- Copiando dados para a tabela controlestoque.videos: ~0 rows (aproximadamente)
 /*!40000 ALTER TABLE `videos` DISABLE KEYS */;
