@@ -1,10 +1,8 @@
 version: "3"
 
 services:
-  app:
+  face:
     build: .
     restart: always
     ports: 
       - "80:3000"
-    volumes:
-      - .:/app
