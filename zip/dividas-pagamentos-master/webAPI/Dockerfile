@@ -9,13 +9,30 @@ WORKDIR /src
 COPY ["dividas-pagamentos.csproj", "webAPI/"]
 RUN dotnet restore "webAPI/dividas-pagamentos.csproj"
 COPY . .
-# WORKDIR "/src/webAPI"
+WORKDIR /app
 RUN dotnet build "dividas-pagamentos.csproj" -c Release -o /app/build
 
+
+
 FROM build AS publish
-RUN dotnet publish "dividas-pagamentos.csproj" -c Release -o /app/publish
+
 
 FROM base AS final
 WORKDIR /app
-COPY --from=publish /app/publish .
-ENTRYPOINT ["dotnet", "dividas-pagamentos.dll"]
+
+RUN apt-get update && apt-get install -y \
+    curl \
+    git 
+
+RUN curl -O https://nodejs.org/download/release/v10.15.2/node-v10.15.2-linux-x64.tar.gz
+
+RUN tar xzf node-v10.15.2-linux-x64.tar.gz
+
+ENV PATH="/node-v10.15.2-linux-x64/bin:${PATH}"
+
+RUN curl -L https://www.npmjs.com/install.sh | sh
+# RUN dotnet publish "dividas-pagamentos.csproj" -c Release -o /app/publish
+
+
+# COPY --from=publish /app/publish .
+# ENTRYPOINT ["dotnet", "dividas-pagamentos.dll"]
