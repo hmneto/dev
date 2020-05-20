@@ -1,6 +1,15 @@
 {
+  "name": "web-crawler-node-request-cheerio-manipulando-master",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
   "dependencies": {
-    "botpress": "^1.1.13",
     "cheerio": "^1.0.0-rc.3",
     "request": "^2.88.2"
   }
