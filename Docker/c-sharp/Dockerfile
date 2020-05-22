@@ -15,3 +15,6 @@ RUN apt update && apt install -y \
 WORKDIR /app
 
 COPY . .
+
+
+# docker run --rm mcr.microsoft.com/dotnet/core/samples
