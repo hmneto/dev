@@ -9,3 +9,7 @@ RUN apt update && apt install -y \
     apt-transport-https
 RUN apt update && apt install -y \
     dotnet-sdk-3.1
+
+WORKDIR /app
+
+COPY . .
