@@ -1,1 +1,1 @@
-echo hello world
+dotnet new react -o my-new-app
