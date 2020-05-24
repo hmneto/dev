@@ -13,7 +13,7 @@ RUN git config --global user.email "hmneton@gmail.com"
 RUN git config --global user.name "hmneto"
 RUN echo "# s" >> README.md
 RUN git init
-RUN git add README.md
+RUN git add .
 RUN git commit -m "first commit"
 RUN git remote add origin https://github.com/hmneto/s.git
 # RUN git push -u origin master
