@@ -18,6 +18,7 @@ RUN create-react-app app
 
 WORKDIR /app
 
+RUN npm start
 # docker run --rm -v ~/Desktop/codes/react-docker/src/:/app/src -it reactdocker:latest 
 
 
