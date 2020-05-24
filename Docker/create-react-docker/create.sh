@@ -1,0 +1,1 @@
+docker build -t react . && docker run -it react
