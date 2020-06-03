@@ -12,6 +12,10 @@ ENV PATH="/node-v10.15.2-linux-x64/bin:${PATH}"
 
 RUN curl -L https://www.npmjs.com/install.sh | sh
 
-RUN npm install express express-generator -g
+RUN npm install express express-generator nodemon -g
+
+COPY app app
 
 WORKDIR /app
+
+RUN npm install
