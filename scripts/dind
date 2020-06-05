@@ -1,0 +1,2 @@
+docker run -privileged -t -i jpetazzo/dind
+docker run -privileged -lxc-conf="aa_profile=unconfined" -t -i dind
