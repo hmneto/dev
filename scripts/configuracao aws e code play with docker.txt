@@ -8,3 +8,10 @@ git clone https://github.com/hmneto/map-pages.git && cd map-pages && git checkou
 
 
 ssh-keygen -t rsa -C "hmneton@gmail.com"
+
+
+sudo apt install python-certbot-apache -y 
+
+certbot --apache
+
+apt update && apt upgrade -y && apt install vim -y && apt install certbot -y && apt install python-certbot-apache -y 
