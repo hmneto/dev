@@ -9,6 +9,7 @@ RUN apt-get update && apt-get install -y \
   mysql-client \
   zip \
   unzip \
+  git \
   # https://github.com/Safran/RoPA/issues/4
   libzip-dev \
   # https://stackoverflow.com/questions/2977662/php-zip-installation-on-linux
