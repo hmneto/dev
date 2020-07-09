@@ -1,0 +1,8 @@
+version: '3'
+services: 
+  webpack:
+    build: .
+    volumes: 
+      - ./:/app
+      - /app/node_modules
+    command: webpack
