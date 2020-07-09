@@ -16,11 +16,3 @@ RUN ./aws/install
 RUN  /usr/local/bin/aws --version
 
 RUN cat /proc/version
-
-RUN apt-get -yqq update
-
-VOLUME ["/var/run/docker.sock"]
-
-RUN apt-get -yqq install docker.io
-
-COPY . .
