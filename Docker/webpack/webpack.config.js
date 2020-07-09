@@ -32,7 +32,7 @@ module.exports = env => {
     plugins: [
             new webpack.EnvironmentPlugin({
                 NODE_ENV: env.NODE_ENV, // use 'development' unless process.env.NODE_ENV is defined
-                DEBUG: true
+                // DEBUG: false
               })
           ],
   };

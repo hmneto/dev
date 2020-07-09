@@ -21,6 +21,8 @@ RUN npm install webpack-cli -g
 
 WORKDIR /app
 
+RUN npm install --save-dev webpack
+
 COPY package*.json ./
 
 RUN npm install
