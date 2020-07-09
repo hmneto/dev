@@ -1,6 +1,6 @@
 version: '3'
 services: 
-  criar_app:
+  init:
     build: .
     command: mv app/ /app2/src/
     volumes:
