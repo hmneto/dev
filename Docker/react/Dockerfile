@@ -10,6 +10,17 @@ RUN npm install create-react-app -g
 
 RUN create-react-app app2
 
+WORKDIR /app2
+
+RUN mkdir app
+RUN mv README.md /app2/app/
+RUN mv package-lock.json /app2/app/
+RUN mv package.json /app2/app/
+RUN mv public/ /app2/app/ 
+RUN mv src/ /app2/app/
+
+
+
 # RUN git config --global user.email "hmneton@gmail.com"
 # RUN git config --global user.name "hmneto"
 # RUN echo "# s" >> README.md
