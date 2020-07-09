@@ -2,7 +2,6 @@ version: '3'
 services: 
   criar_app:
     build: .
-    command: mv /app2/app /
+    command: mv app/ /app2/src/
     volumes:
-      - ./src:/app
-      # - /app/node_modules
+      - ./src:/app2/src/
