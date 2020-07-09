@@ -5,4 +5,4 @@ services:
     command: create-react-app app
     volumes:
       - .:/app
-      - ./app/node_modules
+      - /app/app/node_modules
