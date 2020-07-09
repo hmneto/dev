@@ -3,7 +3,5 @@ services:
   node:
     build: .
     command: express app --view=jade
-    ports: 
-      - 3000:3000
     volumes: 
       - .:/app
