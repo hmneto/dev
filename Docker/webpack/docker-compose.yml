@@ -2,8 +2,9 @@ version: '3'
 services: 
   webpack:
     build: .
+    container_name: webpack_build
     volumes: 
-      - ./:/app
-      - /app/node_modules
-    # command: webpack --env.NODE_ENV=local --env.production --progress
-    command: webpack --env.NODE_ENV=production
+      - .:/app
+      # - /app/node_modules
+    command: webpack --env.NODE_ENV=local --env.production --progress
+    # command: webpack --env.NODE_ENV=production
