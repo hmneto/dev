@@ -4,5 +4,5 @@ services:
     build: .
     command: create-react-app app
     volumes:
-      - .:/app
-      - /app/app/node_modules
+      - .:/app2
+      # - /app/node_modules

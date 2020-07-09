@@ -7,7 +7,7 @@ RUN tar xzf node-v10.15.2-linux-x64.tar.gz
 ENV PATH="/node-v10.15.2-linux-x64/bin:${PATH}"
 RUN curl -L https://www.npmjs.com/install.sh | sh
 RUN npm install create-react-app -g
-WORKDIR /app
+
 # RUN git config --global user.email "hmneton@gmail.com"
 # RUN git config --global user.name "hmneto"
 # RUN echo "# s" >> README.md
