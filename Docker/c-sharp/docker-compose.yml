@@ -2,3 +2,7 @@ version: '3'
 services: 
   create:
     build: .
+    command: dotnet run
+    ports: 
+      - 5000:5000
+      - 5001:5001
