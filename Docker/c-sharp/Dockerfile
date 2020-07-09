@@ -31,4 +31,5 @@ COPY . .
 RUN dotnet new react -o my-new-app
 
 EXPOSE 5000
+EXPOSE 5001
 # docker run --rm mcr.microsoft.com/dotnet/core/samples
