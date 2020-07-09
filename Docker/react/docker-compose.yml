@@ -1,8 +1,7 @@
 version: '3'
 services: 
-  react:
+  criar_app:
     build: .
-    command: create-react-app app
     volumes:
-      - .:/app2
+      - ./src:/app
       # - /app/node_modules
