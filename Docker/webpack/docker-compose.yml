@@ -5,4 +5,4 @@ services:
     volumes: 
       - ./:/app
       - /app/node_modules
-    command: webpack
+    command: webpack --env.NODE_ENV=local --env.production --progress
