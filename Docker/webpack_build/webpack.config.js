@@ -1,20 +1,3 @@
-// const path = require("path");
-// const webpack = require('webpack');
-
-// module.exports = {
-//   entry: path.join(__dirname, "index.js"),
-//   output: {
-//     filename: "bundle.js",
-//     path: path.resolve(__dirname),
-//   },
-//   plugins: [
-//     new webpack.EnvironmentPlugin({
-//         NODE_ENV: 'production', // use 'development' unless process.env.NODE_ENV is defined
-//         DEBUG: true
-//       })
-//   ],
-// };
-
 const path = require('path');
 const webpack = require('webpack');
 
