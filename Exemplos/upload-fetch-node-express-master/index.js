@@ -3,19 +3,19 @@ const app = express()
 const fs = require('fs')
 var router = express.Router()
 app.use(router)
-app.use(express.static('public'))
+app.use(express.static('/public'))
 app.set('view engine', 'jade')
 router.get('/', function (req, res, next) {
     res.render('index', { title: 'Express' })
 })
 
 router.post('/upload', function(req, res){
-    const file = fs.createWriteStream('file.mp4')
+    const file = fs.createWriteStream('public/file.mp4')
     req.on('data',function(chunk){
-        file.write(chunk)
+        file.write(chunk)   
     }).on('end',function(){
         file.end() 
-        res.send({status: 'ok'})
+        res.send({status: file})
     })
     
 })
