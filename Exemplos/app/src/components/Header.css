@@ -1,0 +1,23 @@
+header.header{
+    background:#1d1e20;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+}
+
+
+header > ul.menu{
+    display: flex;
+}
+
+
+header > ul.menu > li{
+    margin-left: 10px;
+}
+
+header > ul.menu > li > a{
+    padding: 10px;
+    background: tomato;
+}

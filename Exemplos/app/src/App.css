@@ -1,0 +1,13 @@
+body,
+ul,
+li{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    font-size: 1.5rem;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
