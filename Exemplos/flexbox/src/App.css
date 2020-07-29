@@ -1,0 +1,11 @@
+.container{
+    /* margin: 0, auto; */
+    border: 1px solid black;
+    margin: 0 auto;
+    max-width: 80%;
+}
+
+.item{
+    background-color: brown;
+    margin: 5px;
+}
