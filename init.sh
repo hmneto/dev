@@ -10,6 +10,9 @@ cd ~/Desktop/codes/dev/ && git add . && git commit -m "update" && git push
 
 
 
+cd ~/Desktop/codes/ && git clone git@github.com:hmneto/dev.git
+
+
 
 
 sudo apt install build-essential default-jdk libssl-dev exuberant-ctags ncurses-term ack-grep silversearcher-ag fontconfig imagemagick libmagickwand-dev software-properties-common git vim-gtk3 curl -y
