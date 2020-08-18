@@ -1,13 +1,9 @@
-aws configure
-docker-machine create --driver amazonec2 bahm03
-docker-machine env bahm03
-@FOR /f "tokens=*" %i IN ('docker-machine env bahm03') DO @%i
-
-docker-compose -f "docker-compose.yml" up -d --build
-git clone https://github.com/hmneto/map-pages.git && cd map-pages && git checkout dev && docker-compose up
+git checkout dev
 
 
 ssh-keygen -t rsa -C "hmneton@gmail.com"
+
+ssh -T git@github.com
 
 
 sudo apt install python-certbot-apache -y 
