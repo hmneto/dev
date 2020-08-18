@@ -2,6 +2,13 @@ sudo apt update && sudo apt upgrade -y && sudo apt install git -y && sudo apt in
 
 
 
+git config --global user.email "hmneton@gmail.com" && git config --global user.name "Honório" && cd ~/Desktop/codes/dev/ && git add . && git commit -m "update" && git push
+
+
+
+
+
+
 sudo apt install build-essential default-jdk libssl-dev exuberant-ctags ncurses-term ack-grep silversearcher-ag fontconfig imagemagick libmagickwand-dev software-properties-common git vim-gtk3 curl -y
 
 
