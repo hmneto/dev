@@ -2,10 +2,10 @@ sudo apt update && sudo apt upgrade -y && sudo apt install git -y && sudo apt in
 
 
 
-git config --global user.email "hmneton@gmail.com" && git config --global user.name "Honório" && ]
+git config --global user.email "hmneton@gmail.com" && git config --global user.name "Honório" &&
 
 
-    cd ~/Desktop/codes/dev/ && git add . && git commit -m "update" && git push
+cd ~/Desktop/codes/dev/ && git add . && git commit -m "update" && git push
 
 
 
