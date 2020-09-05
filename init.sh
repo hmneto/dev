@@ -127,3 +127,12 @@ sudo apt-get upgrade -y &&
 sudo apt install docker.io -y && 
 sudo curl -L "https://github.com/docker/compose/releases/download/1.26.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose && 
 sudo chmod +x /usr/local/bin/docker-compose
+
+
+
+echo "deb [arch=amd64] https://repo.skype.com/deb stable main" | sudo tee /etc/apt/sources.list.d/skype-stable.list
+wget https://repo.skype.com/data/SKYPE-GPG-KEY
+sudo apt-key add SKYPE-GPG-KEY
+sudo apt install apt-transport-https
+sudo apt update
+sudo apt install skypeforlinux
