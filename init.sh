@@ -1,11 +1,21 @@
-sudo apt update && sudo apt upgrade -y && sudo apt install git -y && sudo apt install docker.io -y &&sudo curl -L "https://github.com/docker/compose/releases/download/1.26.0/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose && sudo chmod +x /usr/local/bin/docker-compose && docker-compose --version && git config --global user.email "hmneton@gmail.com" && git config --global user.name "Honório"
+sudo apt update && sudo apt upgrade -y && 
+sudo apt install git -y && 
+sudo apt install docker.io -y &&
+sudo curl -L "https://github.com/docker/compose/releases/download/1.26.0/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose && 
+sudo chmod +x /usr/local/bin/docker-compose && docker-compose --version && 
+git config --global user.email "hmneton@gmail.com" && 
+git config --global user.name "Honório"
 
 
 
-git config --global user.email "hmneton@gmail.com" && git config --global user.name "Honório" &&
+git config --global user.email "hmneton@gmail.com" && 
+git config --global user.name "Honório" &&
 
 
-cd ~/Desktop/codes/dev/ && git add . && git commit -m "update" && git push
+cd ~/Desktop/codes/dev/ && 
+git add . && 
+git commit -m "update" && 
+git push
 
 
 wget -qO- https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > packages.microsoft.gpg
@@ -19,7 +29,8 @@ sudo apt-get install code # or code-insiders
 
 
 
-cd ~/Desktop/codes/ && git clone git@github.com:hmneto/dev
+cd ~/Desktop/codes/ && 
+git clone git@github.com:hmneto/dev
 
 
 sudo apt install virtualbox
@@ -69,13 +80,29 @@ cat /etc/apt/sources.list
 https://github.com/artf/grapesjs.git
 
 
-apt update && apt upgrade -y && apt install php -y && apt install nodejs -y && apt install git -y && npm install nodemon -g && npm install create-react-app -g && npm install yarn -g && npm install create-react-native-app -g && git config --global user.email "hmneton@gmail.com" && git config --global user.name "hmneto" && git clone https://github.com/hmneto/dev.git && cd dev && cd web && npm install && cd .. && cd android && npm install && npm start
+apt update && apt upgrade -y && apt install php -y && 
+apt install nodejs -y && 
+apt install git -y && 
+npm install nodemon -g && 
+npm install create-react-app -g && 
+npm install yarn -g && 
+npm install create-react-native-app -g && 
+git config --global user.email "hmneton@gmail.com" && 
+git config --global user.name "hmneto" && 
+git clone https://github.com/hmneto/dev.git && 
+cd dev && 
+cd web && 
+npm install && 
+cd .. && 
+cd android && 
+npm install && 
+npm start
 
-[1/16, 2:57 AM] Honório Neto: pkg install wget proot -y
-[1/16, 2:58 AM] Honório Neto: mkdir ubuntu
-[1/16, 2:59 AM] Honório Neto: bash ./ubuntu.sh
-[1/16, 3:00 AM] Honório Neto: wget https://raw.githubusercontent.com/Neo-Oli/termux-ubuntu/master/ubuntu.sh
-[1/16, 3:03 AM] Honório Neto: ./start-ubuntu.sh
+pkg install wget proot -y
+mkdir ubuntu
+bash ./ubuntu.sh
+wget https://raw.githubusercontent.com/Neo-Oli/termux-ubuntu/master/ubuntu.sh
+./start-ubuntu.sh
 
 https://portal.azure.com/#blade/Microsoft_Azure_Education/EducationMenuBlade/software
 
