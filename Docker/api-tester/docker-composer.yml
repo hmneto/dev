@@ -1,0 +1,7 @@
+version: '3'
+services: 
+  api-tester:
+    image: liyasthomas/postwoman
+    ports: 
+      - 3000:3000
+  
