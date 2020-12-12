@@ -3,5 +3,5 @@ services:
   api-tester:
     image: liyasthomas/postwoman
     ports: 
-      - 3000:3000
+      - 3001:3000
   
