@@ -1,1 +1,1 @@
-docker build . -t ubuntulocal
+docker build . -t helloworld
