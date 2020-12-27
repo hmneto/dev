@@ -7,4 +7,4 @@ services:
     ports:
       - 80:80
     volumes:
-      - ./teste:/var/www
+      - ./cake_files:/var/www
