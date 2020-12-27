@@ -34,29 +34,29 @@ RUN php -r "unlink('composer-setup.php');"
 # Execute the following command to move the composer.phar to a directory that is in your path
 RUN mv composer.phar /usr/local/bin/composer
 #set our application folder as an environment variable
-ENV APP_HOME /var/www
+# ENV APP_HOME /var/www
 
-WORKDIR ${APP_HOME}
+# WORKDIR ${APP_HOME}
 
 # COPY composer.json $APP_HOME
 # install all PHP dependencies
 # RUN composer install --no-interaction --no-plugins --no-scripts
 
-RUN composer create-project --prefer-dist cakephp/app html
+#RUN composer create-project --prefer-dist cakephp/app html
 
 #change uid and gid of apache to docker user uid/gid
-RUN usermod -u 1000 www-data && groupmod -g 1000 www-data
+#RUN usermod -u 1000 www-data && groupmod -g 1000 www-data
 #change the web_root to cakephp /var/www/html/webroot folder
-RUN sed -i -e "s/html/html\/webroot/g" /etc/apache2/sites-enabled/000-default.conf
+#RUN sed -i -e "s/html/html\/webroot/g" /etc/apache2/sites-enabled/000-default.conf
 # enable apache module rewrite
-RUN a2enmod rewrite
+#RUN a2enmod rewrite
 
-ENV APP_HOME /var/www/html
+# ENV APP_HOME /var/www/html
 
 #copy source files and run composer
-COPY . $APP_HOME
+# COPY . $APP_HOME
 
-WORKDIR ${APP_HOME}
+# WORKDIR ${APP_HOME}
 #change ownership of our applications
-RUN ls
+# RUN ls
 # RUN chown -R www-data:www-data $APP_HOME
