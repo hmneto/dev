@@ -1,5 +1,6 @@
 version: '3'
 services:
-
   init:
     build: .
+    ports:
+      - 80:80
