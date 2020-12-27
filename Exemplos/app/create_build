@@ -1,0 +1,4 @@
+#!/bin/bash
+node enviroment.js
+yarn build-prod 
+node compile.js
