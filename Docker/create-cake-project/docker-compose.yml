@@ -7,4 +7,5 @@ services:
     ports:
       - 80:80
     volumes:
-      - ./cake_files:/var/www
+      - ./src:/var/www
+      # - /var/www/html/vendor
