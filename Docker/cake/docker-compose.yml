@@ -2,6 +2,7 @@ version: '3'
 services:
   init:
     build: .
+    command: composer create-project --prefer-dist cakephp/app html
     ports:
       - 80:80
     volumes:
