@@ -6,8 +6,6 @@ services:
       - ./:/app
       - /app/node_modules
     # command: yarn build-dev
-    command: create_build
-    working_dir: /app
-
-
+     command: create_build
+     working_dir: /app
     # docker-compose -f "create-react-compose.yml" up --build
