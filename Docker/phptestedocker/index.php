@@ -1,6 +1,6 @@
 <?php
 
-echo('depois de rodar você até esquece');
+echo('HELLO WORLD');
 
 echo "<br>";
 
