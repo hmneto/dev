@@ -1,0 +1,13 @@
+version: "3"
+services:
+  compiler-react:
+    build: .
+    volumes:
+      - ./:/app
+      - /app/node_modules
+    # command: yarn build-dev
+    command: create_build
+    working_dir: /app
+
+
+    # docker-compose -f "create-react-compose.yml" up --build
