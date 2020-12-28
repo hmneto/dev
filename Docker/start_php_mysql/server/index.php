@@ -4,5 +4,5 @@ $f = new Conexao();
 
 
 print_r($f->getInstancia());
-echo '<br>';
-print_r($_POST['teste']);
+// echo '<br>';
+// print_r($_POST['teste']);
