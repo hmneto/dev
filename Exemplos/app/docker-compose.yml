@@ -2,7 +2,7 @@ version: "3"
 services:
   compiler-react:
     build: .
-    command: /bin/create_build
+    command: create_build
     working_dir: /app
     volumes:
       - ./:/app
