@@ -1,6 +1,5 @@
 version: "3"
 services:
-
   compiler-react:
     build: .
     command: create_build
