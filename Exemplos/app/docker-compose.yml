@@ -7,5 +7,5 @@ services:
     volumes:
       - ./:/app
       - /app/node_modules
-    # command: yarn build-dev
+    command: yarn build-dev
     # docker-compose -f "create-react-compose.yml" up --build
