@@ -26,8 +26,6 @@ RUN npm install env-cmd -g
 
 COPY . .
 
-RUN chmod 777 create_build 
-
 COPY create_build /bin
 
 # RUN export PATH=$PATH:/app/
