@@ -1,0 +1,134 @@
+pkg install openssh -y
+ssh-keygen -t rsa -C "hmneton@gmail.com"
+
+
+wget rarlab.com/rar/rarlinux-x64-5.1.1.tar.gz
+tar -zxvf rarlinux-x64-5.1.1.tar.gz
+cd rar/
+make
+make install
+rar
+
+
+git clone https://github.com/hmneto/dev
+cd dev/vnc
+./vnc.sh
+
+
+
+
+
+
+api taster
+
+git clone https://github.com/hmneto/dev
+cd dev/Docker/api-tester 
+docker-compose up --build
+===================================
+cake 
+
+git clone https://github.com/hmneto/dev
+cd dev/Docker/cake/
+docker-compose up --build
+cd cake_files/html
+ls
+===================================
+create express node
+
+git clone https://github.com/hmneto/dev
+cd dev/Docker/create_express/
+docker-compose up -d --build
+===================================
+phptestedocker
+
+git clone https://github.com/hmneto/dev
+cd dev/Docker/phptestedocker/
+docker-compose up -d --build
+===================================
+react_create_app
+
+git clone https://github.com/hmneto/dev
+cd dev/Docker/react_create_app/
+docker-compose up -d --build
+===================================
+start_php_mysql
+
+git clone https://github.com/hmneto/dev
+cd dev/Docker/start_php_mysql/
+docker-compose up -d --build
+===================================
+webpack_build
+
+git clone https://github.com/hmneto/dev
+cd dev/Docker/webpack_build/
+docker-compose up --build
+===================================
+app
+
+git clone https://github.com/hmneto/dev
+cd dev/Exemplos/app/
+chmod 777 create_build
+docker-compose up --build
+===================================
+
+
+
+
+
+
+
+git pull
+docker-compose up -d --build
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------
+-----------------------------------------------------------
+-----------------------------------------------------------
+-----------------------------------------------------------
+-----------------------------------------------------------
+-----------------------------------------------------------
+-----------------------------------------------------------
+-----------------------------------------------------------
+
+
+NAO FUNCIONA
+c#
+
+git clone https://github.com/hmneto/dev
+cd dev/Docker/c-sharp/
+docker-compose up --build
+===================================
+
+node_alpine
+
+git clone https://github.com/hmneto/dev
+cd dev/Docker/nodealpine/
+docker-compose up --build
+
+===================================
+node_argon_supervisor
+
+git clone https://github.com/hmneto/dev
+cd dev/Docker/node_argon_supervisor/
+docker-compose up --build
