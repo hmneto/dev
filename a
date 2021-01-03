@@ -71,8 +71,10 @@ chmod 777 create_build
 docker-compose up --build
 ===================================
 
-
-
+git clone https://github.com/hmneto/dev
+cd dev/Exemplos/auto-pull-git-node/
+docker-compose up --build
+===================================
 
 
 
