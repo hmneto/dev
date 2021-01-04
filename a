@@ -27,3 +27,9 @@ node_argon_supervisor
 git clone https://github.com/hmneto/dev
 cd dev/Docker/node_argon_supervisor/
 docker-compose up --build
+
+
+
+# RUN export PATH=$PATH:/app/
+
+# export PATH=$PATH:/home/mint/bahm/app/
