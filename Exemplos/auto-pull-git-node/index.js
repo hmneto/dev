@@ -16,3 +16,8 @@ async function sinc() {
 }
 
 setInterval(sinc, 2000)
+
+
+setInterval(function(){
+  console.log('ok')
+}, 2000)
