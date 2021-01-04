@@ -15,51 +15,6 @@ cd dev/vnc
 ./vnc.sh
 
 
-
-api taster
-
-git clone https://github.com/hmneto/dev
-cd dev/Docker/api-tester 
-docker-compose up --build
-===================================
-cake 
-
-git clone https://github.com/hmneto/dev
-cd ~/dev/Docker/create-cake-project
-docker-compose up --build
-cd cake_files/html
-ls
-===================================
-create express node
-
-git clone https://github.com/hmneto/dev
-cd dev/Docker/create_express/
-docker-compose up -d --build
-===================================
-phptestedocker
-
-git clone https://github.com/hmneto/dev
-cd dev/Docker/phptestedocker/
-docker-compose up -d --build
-===================================
-react_create_app
-
-git clone https://github.com/hmneto/dev
-cd dev/Docker/react_create_app/
-docker-compose up -d --build
-===================================
-start_php_mysql
-
-git clone https://github.com/hmneto/dev
-cd dev/Docker/start_php_mysql/
-docker-compose up -d --build
-===================================
-webpack_build
-
-git clone https://github.com/hmneto/dev
-cd dev/Docker/webpack_build/
-docker-compose up --build
-===================================
 app
 
 git clone https://github.com/hmneto/dev
