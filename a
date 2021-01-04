@@ -25,7 +25,7 @@ docker-compose up --build
 cake 
 
 git clone https://github.com/hmneto/dev
-cd dev/Docker/cake/
+cd ~/dev/Docker/create-cake-project
 docker-compose up --build
 cd cake_files/html
 ls
