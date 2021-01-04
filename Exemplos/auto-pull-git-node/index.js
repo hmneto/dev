@@ -1,5 +1,6 @@
 const { spawn } = require('child_process');
 
+/*
 
 async function sinc() {
   const ls = spawn('git', ['pull']);
@@ -17,3 +18,8 @@ async function sinc() {
 }
 
 setInterval(sinc, 2000)
+*/
+
+setInterval(function(){
+   console.log('ok')
+}, 2000)
