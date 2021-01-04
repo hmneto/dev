@@ -2,7 +2,7 @@ git clone https://github.com/hmneto/dev
 cd ~/dev/zip
 docker rm -f novo
 docker build -t teste .
-docker run --rm --name novo -t teste bash
+docker run --name novo -t teste bash
 docker logs -f novo
 
 
