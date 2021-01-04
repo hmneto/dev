@@ -1,5 +1,5 @@
 const { spawn } = require('child_process');
-
+/*
 async function sinc() {
   const ls = spawn('git', ['pull']);
   await ls.stdout.on('data', (data) => {
@@ -17,7 +17,7 @@ async function sinc() {
 
 setInterval(sinc, 2000)
 
-
+*/
 setInterval(function(){
   console.log('ok')
 }, 2000)
