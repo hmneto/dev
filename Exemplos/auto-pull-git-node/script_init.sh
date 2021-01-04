@@ -1,4 +1,3 @@
-
 git clone https://github.com/hmneto/dev
 cd ~/dev/Exemplos/auto-pull-git-node/
 docker build -t teste .
