@@ -2,14 +2,6 @@ pkg install openssh -y
 ssh-keygen -t rsa -C "hmneton@gmail.com"
 
 
-wget rarlab.com/rar/rarlinux-x64-5.1.1.tar.gz
-tar -zxvf rarlinux-x64-5.1.1.tar.gz
-cd rar/
-make
-make install
-rar
-
-
 git clone https://github.com/hmneto/dev
 cd dev/vnc
 ./vnc.sh
