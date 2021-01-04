@@ -7,4 +7,4 @@ const requisicao = axios.default({
     url:`https://viacep.com.br/ws/${cepValue}/json/`
 })
 
-requisicao.then(data=>console.log(data))
+requisicao.then(data=>console.log(data.data))
