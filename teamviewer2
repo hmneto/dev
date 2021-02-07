@@ -1,1 +1,0 @@
-sudo apt-get update && apt-get upgrade && wget -c https://download.teamviewer.com/download/linux/teamviewer_amd64.deb && sudo apt-get install ./teamviewer*.deb && teamviewer
