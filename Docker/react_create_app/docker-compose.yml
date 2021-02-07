@@ -1,7 +1,0 @@
-version: '3'
-services: 
-  init:
-    build: .
-    command: mv app/ /app2/src/
-    volumes:
-      - ./src:/app2/src/
