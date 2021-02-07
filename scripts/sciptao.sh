@@ -40,23 +40,12 @@ sudo apt-get upgrade -y
 
 
 
-sudo rm -rf  /var/lib/docker
-sudo systemctl enable docker
-sudo systemctl start docker
 
-git config --global user.email "hmneton@gmail.com"
-git config --global user.name "Honório"
 asdf uninstall nodejs 14.11.0
 
 
 
 
-sudo chown -R $USER /home/honorio/codes/bahm/imagens/app
 
 
 
-apt install snapd
-sudo snap install postman
-
-
-https://github.com/codu-code/dockerize-visual-studio
