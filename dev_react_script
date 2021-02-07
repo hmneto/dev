@@ -1,2 +1,0 @@
-. $HOME/.asdf/asdf.sh
-cd /home/honorio/codes/bahm/app/ && yarn start-linux-dev
