@@ -1,3 +1,1 @@
-#!/bin/sh
-pkg install openssh
-ssh-keygen -t rsa -C "hmneton@gmail.com"
+pkg install openssh && ssh-keygen -t rsa -C "hmneton@gmail.com"
