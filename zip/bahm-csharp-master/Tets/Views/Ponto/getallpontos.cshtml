@@ -1,0 +1,21 @@
+﻿
+@model List<BAHM.PontoModel>
+@{
+    ViewData["Title"] = "getallpontos";
+}
+
+@foreach (BAHM.PontoModel item in Model)
+{
+    @using (Html.BeginForm("edit","Ponto"))
+    {
+        @item.Nome
+        <br />
+        @Html.Hidden("teste",@item.Ponto_id)
+        <input type="submit" value="editar" />
+        <br />
+    }
+
+    <br />
+    <br />
+}
+

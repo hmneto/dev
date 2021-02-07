@@ -1,0 +1,16 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+@using (Html.BeginForm("getoneponto", "Ponto"))
+{
+    @Html.TextBox("entrada")
+    <input type="submit" value="Executar" />
+}
+
+
+@using (Html.BeginForm("getallpontos", "Ponto"))
+{
+    <input type="submit" value="Todos os pontos" />
+}

@@ -1,0 +1,63 @@
+version: "3.3"
+services:
+    adminer:
+        depends_on:
+            - db
+        image: adminer
+        restart: always
+        ports:
+           - 85:8080
+
+    # web:
+    #     image: php:7.3.3-apache
+    #     container_name: web_server
+    #     depends_on:
+    #         - api
+    #     volumes:
+    #         - ./web:/var/www/html/
+    #     ports:
+    #         - 80:80
+
+    # api:
+    #     build: ./api
+    #     container_name: php_server
+    #     depends_on:
+    #         - db
+    #     volumes:
+    #         - ./api:/var/www/html/
+
+
+    #     environment:
+    #         dbserver: db
+    #         dbuser: devuser
+    #         dbpass: devpass
+    #         dbdatabase: bahm
+
+    phpapp:
+        container_name: phpapp
+        build: ./api
+        depends_on: 
+            - db
+        ports: 
+            - 80:80
+        volumes:
+            - ./bahm:/var/www/html/
+        environment: 
+            server: db
+            user: devuser
+            pass: devpass
+            database: bahm
+
+    db:
+        container_name: mysql_server
+        image: mysql:8.0
+        command: --default-authentication-plugin=mysql_native_password
+        restart: always
+        environment:
+            MYSQL_ROOT_PASSWORD: root
+            MYSQL_DATABASE: bahm
+            MYSQL_USER: devuser
+            MYSQL_PASSWORD: devpass
+
+        ports:
+            - 3306:3306
