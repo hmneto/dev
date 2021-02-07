@@ -1,5 +1,1 @@
-
-sudo apt install x11vnc -y
-
-crontab -e
-@reboot x11vnc --forever
+sudo apt install x11vnc -y && crontab -e && @reboot x11vnc --forever
