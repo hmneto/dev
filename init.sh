@@ -130,9 +130,4 @@ sudo chmod +x /usr/local/bin/docker-compose
 
 
 
-echo "deb [arch=amd64] https://repo.skype.com/deb stable main" | sudo tee /etc/apt/sources.list.d/skype-stable.list
-wget https://repo.skype.com/data/SKYPE-GPG-KEY
-sudo apt-key add SKYPE-GPG-KEY
-sudo apt install apt-transport-https
-sudo apt update
-sudo apt install skypeforlinux
+echo "deb [arch=amd64] https://repo.skype.com/deb stable main" | sudo tee /etc/apt/sources.list.d/skype-stable.list && wget https://repo.skype.com/data/SKYPE-GPG-KEY && sudo apt-key add SKYPE-GPG-KEY && sudo apt install apt-transport-https && sudo apt update && sudo apt install skypeforlinux
