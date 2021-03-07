@@ -16,7 +16,7 @@ Scaffold-DbContext "Server=192.168.99.100,85;Database=xxxxx;User Id=xxxx;Passwor
 Scaffold-DbContext "Server=192.168.99.100,5434;Database=teste;User Id=sa;Password=Pass@word;" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Model -Context "AdventureContext" -DataAnnotations
 
 
-Scaffold-DbContext "Server=192.168.99.100;Port=3306;Database=xxxxx;Uid=xxxx;Pwd=xxxx;;" Pomelo.EntityFrameworkCore.MySql -OutputDir Model -Context "AdventureContext" -DataAnnotations
+Scaffold-DbContext "Server=192.168.99.100;Port=3306;Database=xxxxx;Uid=xxxx;Pwd=xxxx;;" Pomelo.EntityFrameworkCore.MySql -OutputDir Model -Context "Db" -DataAnnotations
 
 
  Install-Package Microsoft.EntityFrameworkCore.Tools 
