@@ -31,3 +31,8 @@ Scaffold-DbContext "Server=192.168.99.100;Port=3306;Database=xxxxx;Uid=xxxx;Pwd=
     </PackageReference>
     <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="2.1.0" />
   </ItemGroup>
+
+
+
+Could not find type mapping for column 'icones.tipo_icone' with data type 'enum('KM','O')'. Skipping column.
+Could not find type mapping for column 'sites.tipo' with data type 'enum('STREET','FOTO','WIKIMAPIA_SAT','WIKIMAPIA_FRIO','PM','SITE','ABCR','CONCESSIONARIA','FOTO_MAPA','WIKIPEDIA','LEI')'. Skipping column.
