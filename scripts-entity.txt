@@ -10,3 +10,5 @@ dotnet tool install --global dotnet-ef
 dotnet ef migrations add teste
 dotnet ef database update
 dotnet add package Pomelo.EntityFrameworkCore.MySql
+Scaffold-DbContext "Server=192.168.99.100,85;Database=xxxxx;User Id=xxxx;Password=xxxx;" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Model -Context "AdventureContext" -DataAnnotations
+ Install-Package Microsoft.EntityFrameworkCore.Tools 
