@@ -20,3 +20,14 @@ Scaffold-DbContext "Server=192.168.99.100;Port=3306;Database=xxxxx;Uid=xxxx;Pwd=
 
 
  Install-Package Microsoft.EntityFrameworkCore.Tools 
+
+
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="2.2.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="2.2.1">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="2.1.0" />
+  </ItemGroup>
