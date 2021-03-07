@@ -2,9 +2,11 @@ dotnet add package Microsoft.EntityFrameworkCore.SqlServer
 dotnet tool install --global dotnet-ef
 dotnet add package Microsoft.EntityFrameworkCore.Design
 dotnet ef dbcontext scaffold "Server=localhost,5434;Database=teste;User Id=sa;Password=Pass@word;" Microsoft.EntityFrameworkCore.SqlServer -o Model
+dotnet ef dbcontext scaffold "Server=192.168.99.100,85;Database=xxxxx;User Id=xxxx;Password=xxxx;" Pomelo.EntityFrameworkCore.MySql -o Model
 add-migration Inicial
 update-database
 export PATH="$PATH:$HOME/.dotnet/tools/"
 dotnet tool install --global dotnet-ef
 dotnet ef migrations add teste
 dotnet ef database update
+dotnet add package Pomelo.EntityFrameworkCore.MySql
